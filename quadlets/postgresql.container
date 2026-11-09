@@ -14,7 +14,7 @@
 
 [Unit]
 # Human-readable label shown in `systemctl status` and the journal.
-# Description=<short description>
+# Description=database container for questions & n8n
 
 # Ordering only ("start after X"); does NOT pull X in.
 After=network-online.target
