@@ -1,0 +1,9 @@
+# Caddyfile configuration
+
+
+# type your sites address
+localhost
+
+# what site will say /do
+respond " Congrats, you've reached the next level"
+

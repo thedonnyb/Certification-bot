@@ -69,7 +69,7 @@ PublishPort=5678:5678
 #   :z = SHARED  SELinux label (several containers)   -> media + downloads
 #   %h expands to your home directory.
 # Volume=%h/<app_name>/config:/config:Z
-Volume=/home/don/cert-bot/n8n:/home/node/.n8n:z
+Volume=/home/don/mm-cert-bot/n8n:/home/node/.n8n:z
 
 
 [Service]

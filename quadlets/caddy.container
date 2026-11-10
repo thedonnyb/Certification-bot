@@ -70,7 +70,7 @@ PublishPort=80:80/tcp
 #   :Z = PRIVATE SELinux label (only this container)  -> per-app config
 #   :z = SHARED  SELinux label (several containers)   -> media + downloads
 #   %h expands to your home directory.
-Volume=/home/don/cert-bot/data:/data:Z
+Volume=/home/don/mm-cert-bot/data/caddy:/data:Z
 Volume=/home/don/caddy/conf:/etc/caddy:Z
 
 [Service]
