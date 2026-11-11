@@ -1,0 +1,11 @@
+# Caddyfile configuration
+
+
+# type your sites address
+localhost {
+	reverse_proxy mattermost:8065
+}
+
+# what site will say /do
+respond " Congrats, you've reached the next level"
+

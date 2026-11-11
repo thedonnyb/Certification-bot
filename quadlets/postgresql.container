@@ -43,7 +43,7 @@ Environment=PGID=1000
 Environment=TZ=America/Chicago
 
 # Load variables (including secrets) from a gitignored file.
-EnvironmentFile=%h/cert-bot/.env
+EnvironmentFile=/home/don/mm-cert-bot/.env
 
 # ------ IMAGE ------
 # Image to run. Pin a version tag (e.g. :4.0) instead of :latest.
@@ -69,7 +69,7 @@ HostName=postgresql
 #   :z = SHARED  SELinux label (several containers)   -> media + downloads
 #   %h expands to your home directory.
 # Volume=%h/<app_name>/config:/config:Z
-Volume=/home/don/cert-bot/data/postgresql/:/var/lib/postgresql:Z
+Volume=/home/don/mm-cert-bot/data/postgresql/:/var/lib/postgresql:Z
 
 
 [Service]

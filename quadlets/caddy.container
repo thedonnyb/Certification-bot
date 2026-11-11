@@ -60,9 +60,9 @@ Network=cert-bot.network
 HostName=caddy
 
 # Expose a container port to the host for local access.
-PublishPort=443:443/tcp
-PublishPort=443:443/udp
-PublishPort=80:80/tcp
+PublishPort=10.0.0.42:443:443/tcp
+PublishPort=10.0.0.42:443:443/udp
+PublishPort=10.0.0.42:80:80/tcp
 
 # ------ STORAGE ------
 # Persist data on the host so it survives container recreation.
@@ -71,7 +71,7 @@ PublishPort=80:80/tcp
 #   :z = SHARED  SELinux label (several containers)   -> media + downloads
 #   %h expands to your home directory.
 Volume=/home/don/mm-cert-bot/data/caddy:/data:Z
-Volume=/home/don/caddy/conf:/etc/caddy:Z
+Volume=/home/don/mm-cert-bot/caddy/conf:/etc/caddy:Z
 
 [Service]
 # Restart policy for the container.

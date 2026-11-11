@@ -32,7 +32,7 @@ ContainerName=mattermost
 
 # Map your host UID into the container so bind-mounted files are
 # owned by YOU on the host (rootless), keeping volume permissions sane.
-UserNS=keep-id
+# UserNS=keep-id
 
 # Lets `podman auto-update` pull a newer image. Pick ONE:
 #   registry = check remote registry   |   local = only locally built images
@@ -42,8 +42,8 @@ AutoUpdate=registry
 # One Environment= per variable. PUID/PGID/TZ are LinuxServer.io conventions.
 # TZ is just an env var — there is no separate Timezone= key.
 # (DO NOT HARDCODE SECRETS — use EnvironmentFile for those.)
-Environment=PUID=1000
-Environment=PGID=1000
+Environment=PUID=2000
+Environment=PGID=2000
 Environment=TZ=America/Chicago
 
 # Load variables (including secrets) from a gitignored file.
@@ -93,4 +93,4 @@ TimeoutStartSec=300
 
 [Install]
 # Makes `systemctl --user enable` auto-start it at login/boot.
-WantedBy=default.target
+WantedBy=multi-user.target

@@ -48,7 +48,7 @@ EnvironmentFile=/home/don/cert-bot/.env
 # ------ IMAGE ------
 # Image to run. Pin a version tag (e.g. :4.0) instead of :latest.
 # Find images with: podman search <name>
-Image=<registry/owner/image:tag>
+Image=docker.io/n8nio/n8n:26.12.1
 
 # ------ NETWORKING ------
 # Join a user-defined network so containers reach each other BY NAME.
