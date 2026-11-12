@@ -2,10 +2,6 @@
 
 
 # type your sites address
-localhost {
+http://100.99.194.50 {
 	reverse_proxy mattermost:8065
 }
-
-# what site will say /do
-respond " Congrats, you've reached the next level"
-

@@ -64,8 +64,8 @@ Network=cert-bot.network
 HostName=mattermost
 
 # Expose a container port to the host for local access.
-PublishPort=8065:8065
-
+# PublishPort=8065:8065
+# PublishPort=100.99.194.50:8065:8065
 # ------ STORAGE ------
 # Persist data on the host so it survives container recreation.
 # Volume=<HOST-DIR or SOURCE-VOLUME>:<CONTAINER-DIR>[:OPTIONS]

@@ -60,9 +60,12 @@ Network=cert-bot.network
 HostName=caddy
 
 # Expose a container port to the host for local access.
-PublishPort=10.0.0.42:443:443/tcp
-PublishPort=10.0.0.42:443:443/udp
+# PublishPort=10.0.0.42:443:443/tcp
+# PublishPort=10.0.0.42:443:443/udp
+
+# Http ports accessible via local or tailscale
 PublishPort=10.0.0.42:80:80/tcp
+PublishPort=100.99.194.50:80:80/tcp
 
 # ------ STORAGE ------
 # Persist data on the host so it survives container recreation.
@@ -83,4 +86,4 @@ TimeoutStartSec=300
 
 [Install]
 # Makes `systemctl --user enable` auto-start it at login/boot.
-WantedBy=default.target
+WantedBy=multi-user.target
